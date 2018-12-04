@@ -1,0 +1,10 @@
+<mat-tab [disabled]="disabled"></mat-tab>
+  <ng-template mat-tab-label>
+    <button *ngIf="closable && !disabled" mat-icon-button color="secondary" (click)="onRemove()" color="primary">
+      <mat-icon aria-label="Example icon-button with a heart icon">clear</mat-icon>
+    </button>
+    {{title}}
+  </ng-template>
+  <p>Some content</p>
+  <p>Some more content</p>
+  <p>Some another content</p>
